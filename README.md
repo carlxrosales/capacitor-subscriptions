@@ -5,7 +5,7 @@ A lightweight capacitor plugin to access app store subscription for iOS and Andr
 ## Install
 
 ```bash
-npm install @carlxrosales/capacitor-subscriptions
+npm install @carlrosales/capacitor-subscriptions
 npx cap sync
 ```
 
@@ -18,7 +18,7 @@ npx cap sync
 ## Usage
 
 ```typescript
-import { Subscriptions } from '@carlxrosales/capacitor-subscriptions';
+import { Subscriptions } from '@carlrosales/capacitor-subscriptions';
 
 // Get the count of active subscriptions
 const { count } = await Subscriptions.getActiveSubscriptionsCount();

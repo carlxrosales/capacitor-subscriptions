@@ -1,5 +1,5 @@
 {
-  "name": "@carlxrosales/capacitor-subscriptions",
+  "name": "@carlrosales/capacitor-subscriptions",
   "version": "0.0.1",
   "description": "A lightweight capacitor plugin to access app store subscription for iOS and Android.",
   "main": "dist/plugin.cjs.js",
