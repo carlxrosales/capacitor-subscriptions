@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-subscriptions",
+  "name": "@carlxrosales/capacitor-subscriptions",
   "version": "0.0.1",
   "description": "A lightweight capacitor plugin to access app store subscription for iOS and Android.",
   "main": "dist/plugin.cjs.js",
@@ -19,15 +19,24 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlxrosales/capacitor-subscriptions.git.git"
+    "url": "git+https://github.com/carlxrosales/capacitor-subscriptions.git"
   },
+  "homepage": "https://github.com/carlxrosales/capacitor-subscriptions#readme",
   "bugs": {
-    "url": "https://github.com/carlxrosales/capacitor-subscriptions.git/issues"
+    "url": "https://github.com/carlxrosales/capacitor-subscriptions/issues"
   },
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "subscriptions",
+    "app-store",
+    "google-play",
+    "ios",
+    "android",
+    "storekit",
+    "billing",
+    "in-app-purchase"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",

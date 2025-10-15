@@ -1,10 +1,8 @@
 import Foundation
 import StoreKit
 
+@available(iOS 15.0, *)
 @objc public class Subscriptions: NSObject {
-    
-    private var productRequest: SKProductsRequest?
-    private var products: [SKProduct] = []
     
     @objc public func getActiveSubscriptionsCount() -> Int {
         return getActiveSubscriptions().count
@@ -79,13 +77,5 @@ import StoreKit
         }
         
         return activeSubscriptions
-    }
-    
-    private func validateReceipt() -> Bool {
-        guard let receiptURL = Bundle.main.appStoreReceiptURL,
-              FileManager.default.fileExists(atPath: receiptURL.path) else {
-            return false
-        }
-        return true
     }
 }

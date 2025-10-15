@@ -5,14 +5,20 @@ A lightweight capacitor plugin to access app store subscription for iOS and Andr
 ## Install
 
 ```bash
-npm install capacitor-subscriptions
+npm install @carlxrosales/capacitor-subscriptions
 npx cap sync
 ```
+
+## Compatibility
+
+- **iOS**: 15.0+ (uses StoreKit 2)
+- **Android**: API level 23+ (uses Google Play Billing Library 6.1.0)
+- **Web**: Not supported
 
 ## Usage
 
 ```typescript
-import { Subscriptions } from 'capacitor-subscriptions';
+import { Subscriptions } from '@carlxrosales/capacitor-subscriptions';
 
 // Get the count of active subscriptions
 const { count } = await Subscriptions.getActiveSubscriptionsCount();
@@ -33,10 +39,10 @@ console.log(`Subscription active: ${isActive}`);
 
 <docgen-index>
 
-- [`getActiveSubscriptionsCount()`](#getactivesubscriptionscount)
-- [`getSubscriptions()`](#getsubscriptions)
-- [`isSubscriptionActive(...)`](#issubscriptionactive)
-- [Interfaces](#interfaces)
+* [`getActiveSubscriptionsCount()`](#getactivesubscriptionscount)
+* [`getSubscriptions()`](#getsubscriptions)
+* [`isSubscriptionActive(...)`](#issubscriptionactive)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -53,7 +59,8 @@ Get the count of active subscriptions
 
 **Returns:** <code>Promise&lt;{ count: number; }&gt;</code>
 
----
+--------------------
+
 
 ### getSubscriptions()
 
@@ -65,7 +72,8 @@ Get detailed information about all subscriptions
 
 **Returns:** <code>Promise&lt;{ subscriptions: SubscriptionInfo[]; }&gt;</code>
 
----
+--------------------
+
 
 ### isSubscriptionActive(...)
 
@@ -81,9 +89,11 @@ Check if a specific product has an active subscription
 
 **Returns:** <code>Promise&lt;{ isActive: boolean; }&gt;</code>
 
----
+--------------------
+
 
 ### Interfaces
+
 
 #### SubscriptionInfo
 
