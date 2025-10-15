@@ -1,7 +1,7 @@
 {
   "name": "capacitor-subscriptions",
   "version": "0.0.1",
-  "description": "Capacitor plugin to access app store subscription data including active subscriptions, purchase history, and subscription status for iOS and Android.",
+  "description": "A lightweight capacitor plugin to access app store subscription for iOS and Android.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
