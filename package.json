@@ -1,6 +1,6 @@
 {
   "name": "@carlrosales/capacitor-subscriptions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A lightweight capacitor plugin to access app store subscription for iOS and Android.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -13,7 +13,7 @@
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
-    "CapacitorSubscriptions.podspec"
+    "CarlrosalesCapacitorSubscriptions.podspec"
   ],
   "author": "Carl Rosales",
   "license": "MIT",
